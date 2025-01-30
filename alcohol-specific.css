@@ -4,26 +4,30 @@
   Colour usage: #f4f1de (cream), #6a7f60 (sage), #a3b18a (greenish sage), #333333 (dark grey)
 */
 
-/* HERO SECTION */
+/* ALCOHOL HERO */
 .alcohol-hero {
-  position: relative;
+
   min-height: 60vh;
-  background: url('https://via.placeholder.com/1600x800') center center/cover no-repeat;
+  background: url('https://via.placeholder.com/1600x800') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .alcohol-hero-overlay {
   position: absolute;
-  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0;
   background: rgba(51, 51, 51, 0.4);
 }
+
 .hero-content {
   position: relative;
   z-index: 2;
   max-width: 650px;
   text-align: center;
+  color: #fff;
 }
+
 
 /* Headings */
 h2 {
