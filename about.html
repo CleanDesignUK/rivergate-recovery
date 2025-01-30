@@ -2,120 +2,213 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Learn about Rivergate Recovery's approach to addiction recovery." />
+  <meta name="description" content="Learn about Rivergate Recovery's approach to addiction recovery. Our mission, team, and values serving North Wales." />
+  <meta name="keywords" content="about, addiction recovery, Wrexham, counsellors, caring staff, therapy, North Wales" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rivergate Recovery | About</title>
+  <title>Rivergate Recovery | About Us</title>
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap, Fonts, Global Styles (similar to index) -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
   />
-
-  <!-- Bootstrap Icons -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
   />
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=DM+Sans:wght@100..900&family=IBM+Plex+Sans:wght@100..900&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- Header / Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Navbar (same as index, with sage background) -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">
-        Rivergate Recovery
+        <i class="bi bi-heart-pulse-fill me-2"></i>Rivergate Recovery
       </a>
       <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-2">
+            <a class="nav-link active" href="about.html">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
+          <li class="nav-item mx-2 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="services.html">All Services</a></li>
+              <li><a class="dropdown-item" href="programme-12-step.html">12-Step Programme</a></li>
+              <li><a class="dropdown-item" href="alcohol-specific.html">Alcohol Addiction</a></li>
+              <li><a class="dropdown-item" href="drug-specific.html">Drug Addiction</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="programme-12-step.html">12-Step Programme</a>
+          <li class="nav-item mx-2 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="clientsDropdown" role="button" data-bs-toggle="dropdown">
+              Clients
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="clientsDropdown">
+              <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+              <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-2">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- End Header / Navbar -->
 
-  <!-- Main About Content -->
-  <section class="py-5">
-    <div class="container">
-      <h1>About Rivergate Recovery</h1>
-      <p>
-        <!-- Placeholder text -->
-        Rivergate Recovery is dedicated to providing professional support and guidance 
-        for those dealing with addiction, substance misuse, and mental health challenges. 
-        Our team is committed to evidence-based practices, compassion, and respect 
-        for every individual's journey.
-      </p>
-      <img
-        src="https://via.placeholder.com/800x400"
-        alt="Placeholder About Image"
-        class="img-fluid my-3"
-      />
-      <p>
-        <!-- More placeholder text -->
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut lectus 
-        pretium, mollis libero vel, ultricies urna. Aliquam congue semper lorem 
-        quis vestibulum.
+  <!-- Hero or Banner for About Page -->
+  <section class="py-5" style="margin-top: 70px;">
+    <div class="container text-center">
+      <h1 class="mb-3">About Rivergate Recovery</h1>
+      <p class="mx-auto" style="max-width: 800px;">
+        Discover our origins, our team, and our commitment to transforming lives 
+        through expert addiction treatment and unwavering support.
       </p>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light py-4">
-    <div class="container d-flex justify-content-between align-items-center">
-      <p class="mb-0">© 2025 Rivergate Recovery</p>
-      <ul class="list-inline mb-0">
-        <li class="list-inline-item">
-          <a href="index.html" class="text-light">Home</a>
-        </li>
-        <li class="list-inline-item">
-          <a href="contact.html" class="text-light">Contact</a>
-        </li>
-      </ul>
+  <!-- Mission & Values Section -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6 text-center">
+          <img
+            src="https://via.placeholder.com/600x400"
+            alt="Our caring staff"
+            class="img-fluid rounded shadow-sm"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-3">Our Mission</h2>
+          <p>
+            We believe every individual deserves a chance to break free from addiction. 
+            At Rivergate Recovery, we combine evidence-based therapies, holistic care, 
+            and a compassionate mindset to guide clients toward lasting change. Our 
+            North Wales location ensures localised support and community connections.
+          </p>
+          <ul class="list-unstyled mt-3">
+            <li><i class="bi bi-check-circle me-2 text-success"></i>Respect &amp; Dignity</li>
+            <li><i class="bi bi-check-circle me-2 text-success"></i>Personalised Treatment Plans</li>
+            <li><i class="bi bi-check-circle me-2 text-success"></i>Evidence-Based Methods</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Expert Team Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Meet Our Expert Team</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Example Team Member -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://via.placeholder.com/400x400"
+              class="card-img-top"
+              alt="Team Member"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Dr. Jane Smith</h5>
+              <p class="card-text">
+                Lead Addiction Specialist with 10+ years of experience in evidence-based 
+                recovery programmes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Add more team members as needed -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://via.placeholder.com/400x400"
+              class="card-img-top"
+              alt="Team Member"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Mark Evans, MSc</h5>
+              <p class="card-text">
+                Clinical Psychologist specialising in CBT, DBT, and family therapy for 
+                substance misuse.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Additional example -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://via.placeholder.com/400x400"
+              class="card-img-top"
+              alt="Team Member"
+            />
+            <div class="card-body text-center">
+              <h5 class="card-title">Sarah Williams</h5>
+              <p class="card-text">
+                Recovery Coach &amp; Counsellor, focusing on relapse prevention and 
+                community aftercare.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-3">Join Our Community of Recovery</h2>
+      <p class="mb-4" style="max-width: 800px; margin: 0 auto;">
+        We strive to make each client feel valued, supported, and empowered. 
+        Ready to take the next step? Contact our team today.
+      </p>
+      <a href="contact.html" class="btn btn-outline-sage btn-lg">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">&copy; 2025 Rivergate Recovery</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="services.html">Services</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </footer>
-  <!-- End Footer -->
+  <!-- END FOOTER -->
 
-  <!-- Bootstrap JS Bundle -->
+  <!-- Bootstrap JS -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
   ></script>
 </body>
 </html>

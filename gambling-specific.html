@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Our gambling-specific addiction recovery services." />
+  <meta name="description" content="Personal, one-to-one gambling addiction support. Online therapy sessions for individuals across Wrexham and all of North Wales." />
+  <meta name="keywords" content="gambling addiction, gambling addiction near me, online gambling help, problem gambler, high stakes gambling, financial strain, Wrexham, North Wales" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rivergate Recovery | Gambling Addiction</title>
 
@@ -10,113 +11,303 @@
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
     crossorigin="anonymous"
   />
-
   <!-- Bootstrap Icons -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
   />
-
-  <!-- Google Fonts -->
+  <!-- Google Fonts (Inter, DM Sans, IBM Plex Sans) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=DM+Sans:wght@100..900&family=IBM+Plex+Sans:wght@100..900&display=swap"
     rel="stylesheet"
   />
-
-  <!-- Custom CSS -->
+  <!-- Global CSS -->
   <link rel="stylesheet" href="css/styles.css" />
+  <!-- Gambling-Specific CSS -->
+  <link rel="stylesheet" href="css/gambling-specific.css" />
 </head>
 <body>
-  <!-- Header / Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">
-        Rivergate Recovery
+        <i class="bi bi-heart-pulse-fill me-2"></i>Rivergate Recovery
       </a>
       <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <!-- Services Dropdown -->
+          <li class="nav-item dropdown mx-2">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="servicesDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="services.html">All Services</a></li>
+              <li><a class="dropdown-item" href="programme-12-step.html">12-Step Programme</a></li>
+              <li><a class="dropdown-item" href="alcohol-specific.html">Alcohol Addiction</a></li>
+              <li><a class="dropdown-item" href="drug-specific.html">Drug Addiction</a></li>
+              <li><a class="dropdown-item active" href="gambling-specific.html">Gambling Addiction</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="alcohol-specific.html">Alcohol Addiction</a>
+          <!-- Clients Dropdown -->
+          <li class="nav-item dropdown mx-2">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="clientsDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Clients
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="clientsDropdown">
+              <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+              <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="drug-specific.html">Drug Addiction</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="gambling-specific.html">Gambling Addiction</a>
+          <!-- Contact Link -->
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- End Header / Navbar -->
+  <!-- END NAVBAR -->
 
-  <!-- Gambling Addiction Section -->
-  <section class="py-5">
+  <!-- HERO SECTION -->
+  <section class="gambling-hero d-flex align-items-center">
+    <div class="gambling-hero-overlay"></div>
+    <div class="container hero-content">
+      <h1 class="display-5 fw-bold text-white">Gambling Addiction Support</h1>
+      <p class="lead text-white mb-4">
+        Compassionate, one-to-one online sessions to help you or a loved one break free 
+        from problematic gambling behaviours.
+      </p>
+      <a href="contact.html" class="btn btn-primary btn-lg">
+        Schedule Your Online Meeting
+      </a>
+    </div>
+  </section>
+  <!-- END HERO SECTION -->
+
+  <!-- SECTION 1: UNDERSTANDING GAMBLING ADDICTION -->
+  <section class="py-5 bg-light">
     <div class="container">
-      <h1>Gambling Addiction Services</h1>
-      <p>
-        Our specialised gambling addiction programme focuses on helping individuals 
-        break the cycle of compulsive gambling.
-      </p>
-      <img
-        src="https://via.placeholder.com/800x400"
-        alt="Placeholder Gambling Image"
-        class="img-fluid my-3"
-      />
-      <p>
-        <!-- Placeholder text -->
-        Curabitur accumsan, mi eu facilisis aliquet, urna lacus commodo quam, 
-        nec ultricies dui magna eu quam. Aliquam semper pharetra turpis eget 
-        mollis.
-      </p>
-      <ul>
-        <li>Personalised counselling sessions</li>
-        <li>Financial management and planning</li>
-        <li>Relapse prevention and support networks</li>
-      </ul>
+      <div class="row align-items-center g-4">
+        <div class="col-md-6">
+          <img
+            src="https://via.placeholder.com/700x450"
+            alt="Online gambling session"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-md-6">
+          <h2 class="mb-4">Understanding Compulsive Gambling</h2>
+          <p>
+            I specialise in helping individuals who struggle with gambling addiction—whether 
+            it’s high-stakes betting, online casinos, or frequent lottery plays. Many people in 
+            <strong>Wrexham, Colwyn Bay, Rhyl, and Bangor</strong> find themselves caught in a cycle 
+            of rising debt, relationship difficulties, and emotional distress. 
+          </p>
+          <p>
+            Gambling addiction doesn’t always present itself outwardly—some may appear to be 
+            functioning gamblers with stable jobs and social lives. In reality, the pressure 
+            to chase losses and the secrecy involved can lead to anxiety, depression, or strained 
+            family dynamics.
+          </p>
+          <p class="mb-0 fw-bold">
+            Through online, one-to-one sessions, I help uncover the root causes of compulsive 
+            gambling and set a path to meaningful change—without judgement or stigma.
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light py-4">
-    <div class="container d-flex justify-content-between align-items-center">
-      <p class="mb-0">© 2025 Rivergate Recovery</p>
-      <ul class="list-inline mb-0">
-        <li class="list-inline-item">
-          <a href="index.html" class="text-light">Home</a>
-        </li>
-        <li class="list-inline-item">
-          <a href="contact.html" class="text-light">Contact</a>
-        </li>
-      </ul>
+  <!-- SECTION 2: MY ONE-TO-ONE ONLINE APPROACH -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="mb-5">
+        <i class="bi bi-chat-square-text-fill me-2"></i>My Personalised Online Therapy
+      </h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Card 1 -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://via.placeholder.com/400x250"
+              class="card-img-top"
+              alt="Individual counselling"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-dark">Individual Video Sessions</h5>
+              <p class="card-text">
+                I offer private, secure online meetings—no inpatient facilities or group staff. 
+                It’s just you and me, focusing on your challenges and goals. If you need 
+                <em>help with gambling near me</em>, my online approach brings expert support 
+                directly to your home.
+              </p>
+              <ul class="list-unstyled mt-3">
+                <li><i class="bi bi-check-circle text-success me-2"></i>Flexible Scheduling</li>
+                <li><i class="bi bi-check-circle text-success me-2"></i>Confidential Video Platform</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://via.placeholder.com/400x250"
+              class="card-img-top"
+              alt="Financial management guidance"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-dark">Financial &amp; Behavioural Strategies</h5>
+              <p class="card-text">
+                I guide you in setting up practical safeguards—budgeting tactics, self-exclusion 
+                tools, and emotional coping strategies—to break the cycle of gambling. My methods 
+                address both the intense urges and the deeper triggers behind them.
+              </p>
+              <ul class="list-unstyled mt-3">
+                <li><i class="bi bi-check-circle text-success me-2"></i>Accountability Check-Ins</li>
+                <li><i class="bi bi-check-circle text-success me-2"></i>Relapse Prevention Tools</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://via.placeholder.com/400x250"
+              class="card-img-top"
+              alt="Ongoing personal support"
+            />
+            <div class="card-body">
+              <h5 class="card-title text-dark">Continual Personal Support</h5>
+              <p class="card-text">
+                Unlike large-scale rehab centres, I personally handle every session, 
+                ensuring you receive consistent, tailored care. With no 24/7 staff, 
+                you’ll have direct, one-person contact for questions or concerns 
+                between scheduled appointments.
+              </p>
+              <ul class="list-unstyled mt-3">
+                <li><i class="bi bi-check-circle text-success me-2"></i>One Practitioner from Start to Finish</li>
+                <li><i class="bi bi-check-circle text-success me-2"></i>Trust-Based Relationship</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: REGAIN CONTROL & HOPE -->
+  <section class="py-5 bg-cream">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6 order-md-2">
+          <img
+            src="https://via.placeholder.com/700x450"
+            alt="Rebuilding life after gambling"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-md-6 order-md-1">
+          <h2 class="mb-4">Regain Control &amp; Hope</h2>
+          <p>
+            My approach combines expertise in addiction counselling with a deep empathy for 
+            those facing gambling problems. Whether you’re worried about mounting debts, 
+            hiding receipts from your family, or struggling with the thrill of high-stakes 
+            games, I can help you re-establish healthy boundaries and coping mechanisms.
+          </p>
+          <p>
+            Since all sessions are remote, you can receive help from anywhere in North Wales 
+            without needing inpatient services. I tailor each plan to fit your schedule, 
+            ensuring that therapy remains a safe space you can rely on.
+          </p>
+          <p class="mb-0 fw-bold">
+            Let’s work together to break the cycle of gambling addiction and restore 
+            stability, confidence, and a renewed sense of purpose in your life.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: GET STARTED (CTA) -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-4">
+        <i class="bi bi-telephone-inbound-fill me-2"></i>Ready to Change Your Life?
+      </h2>
+      <p class="mx-auto mb-4" style="max-width: 700px;">
+        If you need help with gambling addiction—be it online casinos, sports betting, 
+        or another form of wagering—reach out today. I offer discreet, one-to-one 
+        online sessions designed to guide you from where you are to where you want to be.
+      </p>
+      <a href="contact.html" class="btn btn-primary btn-lg">
+        Book an Online Session
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer bg-dark text-light pt-4 pb-3 mt-5">
+    <div class="container">
+      <div class="row">
+        <!-- Footer Column 1 -->
+        <div class="col-md-6">
+          <p class="mb-0">© 2025 Rivergate Recovery</p>
+        </div>
+        <!-- Footer Column 2 -->
+        <div class="col-md-6 text-md-end">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a href="index.html" class="text-light">Home</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="contact.html" class="text-light">Contact</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="services.html" class="text-light">Services</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </footer>
-  <!-- End Footer -->
+  <!-- END FOOTER -->
 
   <!-- Bootstrap JS Bundle -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"
   ></script>
 </body>

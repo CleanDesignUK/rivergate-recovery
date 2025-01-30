@@ -4,62 +4,32 @@
 
 /* HERO SECTION */
 .hero-home {
-    position: relative;
-    min-height: 80vh;
-    background: url('https://via.placeholder.com/1600x900') center center / cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(51, 51, 51, 0.5); /* Semi-transparent dark overlay */
-  }
-  
-  .hero-content {
-    position: relative;
-    z-index: 2; /* Above overlay */
-    max-width: 700px;
-  }
-  
-  /* Services Preview Cards */
-  #services-preview .service-card {
-    border: none;
-    transition: transform 0.2s;
-  }
-  #services-preview .service-card:hover {
-    transform: translateY(-2px);
-  }
-  
-  /* Section Background Colours */
-  .bg-cream {
-    background-color: #f4f1de; /* Light Cream */
-  }
-  .bg-greenish-sage {
-    background-color: #a3b18a; /* Greenish Sage */
-  }
-  .bg-sage-gray {
-    background-color: #a5a58d; /* Sage Grey */
-  }
-  
-  /* For text colour in the greenish sage / sage grey sections */
-  .bg-greenish-sage p,
-  .bg-greenish-sage h2,
-  .bg-greenish-sage a,
-  .bg-sage-gray p,
-  .bg-sage-gray h2,
-  .bg-sage-gray a {
-    color: #ffffff !important;
-  }
-  
-  /* Images in 2-column layout */
-  img.rounded.shadow-sm {
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  }
-  
+  position: relative;
+  min-height: 80vh;
+  background: url('https://via.placeholder.com/1600x900') center center / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(51, 51, 51, 0.5); /* Semi-transparent dark overlay */
+}
+.hero-content {
+  position: relative;
+  z-index: 2; /* Above overlay */
+  max-width: 700px;
+  text-align: center; /* Ensure hero text is centred horizontally */
+}
+
+/* Services Cards Hover */
+#services-preview .service-card {
+  transition: transform 0.2s;
+}
+#services-preview .service-card:hover {
+  transform: translateY(-2px);
+}

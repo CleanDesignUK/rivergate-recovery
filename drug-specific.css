@@ -1,72 +1,67 @@
 /*
-  Drug-Specific CSS
-  Advanced styling for a more detailed, marketing-oriented page.
-  Utilising brand fonts (Inter, DM Sans, IBM Plex Sans) and colour touches:
-  #6a7f60 (dark sage), #a3b18a (greenish sage), #333333 (dark grey), #f4f1de (cream).
+  drug-specific.css
+  Single-person, online approach for drug addiction recovery.
+  Maintains brand palette: #6a7f60 (sage), #a3b18a (greenish sage), #f4f1de (cream), #333333 (dark grey)
 */
 
 /* HERO SECTION */
 .drug-hero {
-    position: relative;
-    min-height: 60vh;
-    background: url('https://via.placeholder.com/1600x800') center center/cover no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .drug-hero-overlay {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 650px;
-    margin-left: 2rem; 
-  }
-  
-  /* Section Headings & Titles */
-  h2 {
-    font-family: 'Inter', sans-serif;
-    color: #333333;
-    font-weight: 700;
-  }
-  .card-title {
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    color: #6a7f60;
-  }
-  
-  /* Cards */
-  .card {
-    background-color: #ffffff;
-    border-radius: 0.4rem;
-  }
-  .card img {
-    border-radius: 0.4rem 0.4rem 0 0;
-  }
-  
-  /* Background Colours */
-  .bg-cream {
-    background-color: #f4f1de;
-  }
-  
-  /* Buttons & CTA */
-  .btn-primary {
-    background-color: #6a7f60; 
-    border-color: #6a7f60;
-  }
-  .btn-primary:hover {
-    background-color: #a3b18a; 
-    border-color: #a3b18a;
-  }
-  
-  /* Footer */
-  .footer {
-    font-size: 0.9rem;
-  }
-  
+  position: relative;
+  min-height: 60vh;
+  background: url('https://via.placeholder.com/1600x800') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.drug-hero-overlay {
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 650px;
+  margin-left: 2rem;
+}
+
+/* Headings & Card Titles */
+h2 {
+  font-family: 'Inter', sans-serif;
+  color: #333333;
+  font-weight: 700;
+}
+.card-title {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  color: #6a7f60;
+}
+
+/* Cards */
+.card {
+  background-color: #ffffff;
+  border-radius: 0.4rem;
+}
+.card img {
+  border-radius: 0.4rem 0.4rem 0 0;
+}
+
+/* Background */
+.bg-cream {
+  background-color: #f4f1de;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #6a7f60;
+  border-color: #6a7f60;
+}
+.btn-primary:hover {
+  background-color: #a3b18a;
+  border-color: #a3b18a;
+}
+
+/* Footer */
+.footer {
+  font-size: 0.9rem;
+}

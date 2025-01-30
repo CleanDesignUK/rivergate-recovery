@@ -2,85 +2,93 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Get in touch with Rivergate Recovery." />
+  <meta name="description" content="Get in touch with Rivergate Recovery. We offer professional support for alcohol, drug, and gambling addictions in North Wales." />
+  <meta name="keywords" content="contact, addiction help, booking a session, phone, email, Wrexham, North Wales" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rivergate Recovery | Contact</title>
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap, Fonts, Global Styles -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
   />
-
-  <!-- Bootstrap Icons -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
   />
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=DM+Sans:wght@100..900&family=IBM+Plex+Sans:wght@100..900&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- Header / Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">
-        Rivergate Recovery
+        <i class="bi bi-heart-pulse-fill me-2"></i>Rivergate Recovery
       </a>
       <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-2">
             <a class="nav-link" href="about.html">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Services</a>
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="services.html">All Services</a></li>
+              <li><a class="dropdown-item" href="programme-12-step.html">12-Step Programme</a></li>
+              <li><a class="dropdown-item" href="alcohol-specific.html">Alcohol Addiction</a></li>
+              <li><a class="dropdown-item" href="drug-specific.html">Drug Addiction</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="programme-12-step.html">12-Step Programme</a>
+          <li class="nav-item dropdown mx-2">
+            <a class="nav-link dropdown-toggle" href="#" id="clientsDropdown" role="button" data-bs-toggle="dropdown">
+              Clients
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="clientsDropdown">
+              <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+              <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+          <li class="nav-item mx-2">
+            <a class="nav-link active" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- End Header / Navbar -->
+  <!-- END NAVBAR -->
 
-  <!-- Contact Section -->
-  <section class="py-5">
-    <div class="container">
-      <h1>Contact Us</h1>
-      <p>
+  <!-- CONTACT HERO -->
+  <section class="py-5" style="margin-top: 70px;">
+    <div class="container text-center">
+      <h1 class="mb-4">Contact Rivergate Recovery</h1>
+      <p class="mx-auto" style="max-width: 700px;">
         We’re here to support you. Please reach out by phone, email, or fill in 
         the form below. We aim to respond within 24 hours.
       </p>
-      <div class="row mt-4">
-        <div class="col-md-6 mb-3">
-          <h5>Contact Details</h5>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM & DETAILS -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="row g-5">
+        <!-- Details -->
+        <div class="col-md-6">
+          <h2>Contact Details</h2>
           <p>
             <strong>Phone:</strong> <a href="tel:+44-1234-567-890">+44 1234 567 890</a><br />
             <strong>Email:</strong> <a href="mailto:info@rivergaterecovery.co.uk">info@rivergaterecovery.co.uk</a>
@@ -92,9 +100,15 @@
             Wrexham, LL11 XYZ<br />
             United Kingdom
           </p>
+          <p>
+            Whether you’re in <strong>Wrexham, Colwyn Bay, Rhyl, or Bangor</strong>, we welcome you to 
+            explore our addiction treatment options. Book a session or consultation to 
+            start your journey to lasting recovery.
+          </p>
         </div>
+        <!-- Form -->
         <div class="col-md-6">
-          <h5>Enquiry Form</h5>
+          <h2>Enquiry Form</h2>
           <form>
             <div class="mb-3">
               <label for="name" class="form-label">Name *</label>
@@ -106,36 +120,37 @@
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Message *</label>
-              <textarea class="form-control" id="message" rows="4" required></textarea>
+              <textarea class="form-control" id="message" rows="5" required></textarea>
             </div>
-            <button class="btn btn-primary" type="submit">Send</button>
+            <!-- Outline button style on form submission -->
+            <button class="btn btn-outline-sage" type="submit">Send</button>
           </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light py-4">
-    <div class="container d-flex justify-content-between align-items-center">
-      <p class="mb-0">© 2025 Rivergate Recovery</p>
-      <ul class="list-inline mb-0">
-        <li class="list-inline-item">
-          <a href="index.html" class="text-light">Home</a>
-        </li>
-        <li class="list-inline-item">
-          <a href="about.html" class="text-light">About</a>
-        </li>
-      </ul>
+  <!-- FOOTER -->
+  <footer class="footer pt-4 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">© 2025 Rivergate Recovery</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item"><a href="index.html">Home</a></li>
+            <li class="list-inline-item"><a href="about.html">About</a></li>
+            <li class="list-inline-item"><a href="services.html">Services</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </footer>
-  <!-- End Footer -->
+  <!-- END FOOTER -->
 
-  <!-- Bootstrap JS Bundle -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
   ></script>
 </body>
 </html>

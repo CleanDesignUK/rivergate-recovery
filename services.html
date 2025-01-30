@@ -2,155 +2,259 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Learn about our comprehensive addiction recovery services." />
+  <meta name="description" content="Learn about our comprehensive services: detox, 12-step, inpatient/outpatient care, and more." />
+  <meta name="keywords" content="services, detox, inpatient, outpatient, therapy, 12-step, aftercare, Wrexham, North Wales" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rivergate Recovery | Services</title>
 
-  <!-- Bootstrap CSS -->
+  <!-- Bootstrap, Fonts, Global Styles -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous"
   />
-
-  <!-- Bootstrap Icons -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
   />
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=DM+Sans:wght@100..900&family=IBM+Plex+Sans:wght@100..900&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- Header / Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">
-        Rivergate Recovery
+        <i class="bi bi-heart-pulse-fill me-2"></i>Rivergate Recovery
       </a>
       <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
+        data-bs-target="#navbarNav"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
-      
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item mx-2">
             <a class="nav-link" href="about.html">About</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="services.html">Services</a>
+          <li class="nav-item mx-2 dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+              Services
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item active" href="services.html">All Services</a></li>
+              <li><a class="dropdown-item" href="programme-12-step.html">12-Step Programme</a></li>
+              <li><a class="dropdown-item" href="alcohol-specific.html">Alcohol Addiction</a></li>
+              <li><a class="dropdown-item" href="drug-specific.html">Drug Addiction</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="programme-12-step.html">12-Step Programme</a>
+          <li class="nav-item mx-2 dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="clientsDropdown" role="button" data-bs-toggle="dropdown">
+              Clients
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="clientsDropdown">
+              <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
+              <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+            </ul>
           </li>
-          <li class="nav-item">
+          <li class="nav-item mx-2">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
-  <!-- End Header / Navbar -->
+  <!-- END NAVBAR -->
 
-  <!-- Services Section -->
-  <section class="py-5">
-    <div class="container">
-      <h1>Our Services</h1>
-      <p>
-        We offer a wide range of services tailored to support individuals on their journey 
-        to sobriety and wellness.
+  <!-- HERO -->
+  <section class="py-5" style="margin-top: 70px;">
+    <div class="container text-center">
+      <h1 class="mb-4">Our Comprehensive Services</h1>
+      <p class="mx-auto" style="max-width: 700px;">
+        We offer a wide range of programmes tailored to support individuals on their journey 
+        to sobriety and wellness. Explore our detox options, 12-step guidance, inpatient/outpatient 
+        care, and aftercare solutions.
       </p>
-      <div class="row mt-4">
-        <div class="col-md-4 mb-3">
+    </div>
+  </section>
+
+  <!-- SERVICE LIST -->
+  <section class="pb-5">
+    <div class="container">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <!-- Card 1: Detox -->
+        <div class="col">
           <div class="card h-100">
             <img
               src="https://via.placeholder.com/400x250"
               class="card-img-top"
-              alt="Placeholder"
+              alt="Detoxification"
             />
             <div class="card-body">
-              <h5 class="card-title">Detox &amp; Withdrawal Management</h5>
+              <h5 class="card-title">Detoxification</h5>
               <p class="card-text">
-                Safe and medically supervised detox programmes for alcohol and drug dependence.
+                Safe and medically supervised detox to manage withdrawal symptoms for alcohol, opioids, 
+                and other substances.
               </p>
+              <ul class="list-unstyled mt-3">
+                <li><i class="bi bi-check-circle text-success me-2"></i>24/7 Clinical Care</li>
+                <li><i class="bi bi-check-circle text-success me-2"></i>Medication-Assisted</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <!-- Card 2: Inpatient & Outpatient -->
+        <div class="col">
           <div class="card h-100">
             <img
               src="https://via.placeholder.com/400x250"
               class="card-img-top"
-              alt="Placeholder"
+              alt="Inpatient & Outpatient"
             />
             <div class="card-body">
               <h5 class="card-title">Inpatient &amp; Outpatient Care</h5>
               <p class="card-text">
-                Flexible treatment options to suit individual needs and personal circumstances.
+                Flexible treatment options that meet you where you are. Benefit from structured 
+                inpatient programmes or maintain daily responsibilities with outpatient support.
               </p>
+              <ul class="list-unstyled mt-3">
+                <li><i class="bi bi-check-circle text-success me-2"></i>Residential Rehab</li>
+                <li><i class="bi bi-check-circle text-success me-2"></i>Day Programmes</li>
+              </ul>
             </div>
           </div>
         </div>
-        <div class="col-md-4 mb-3">
+        <!-- Card 3: Therapy & Counselling -->
+        <div class="col">
           <div class="card h-100">
             <img
               src="https://via.placeholder.com/400x250"
               class="card-img-top"
-              alt="Placeholder"
+              alt="Therapy Sessions"
             />
             <div class="card-body">
-              <h5 class="card-title">Therapeutic Programmes</h5>
+              <h5 class="card-title">Therapy &amp; Counselling</h5>
               <p class="card-text">
-                Evidence-based therapy sessions, including individual counselling 
-                and group support.
+                Evidence-based approaches including CBT, DBT, group therapy, and family sessions 
+                to address underlying triggers.
               </p>
+              <ul class="list-unstyled mt-3">
+                <li><i class="bi bi-check-circle text-success me-2"></i>One-on-One Sessions</li>
+                <li><i class="bi bi-check-circle text-success me-2"></i>Family Workshops</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
-      <!-- Add more service cards or sections as needed -->
+      <!-- Additional row if needed -->
+      <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
+        <!-- Card 4: 12-Step -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://via.placeholder.com/400x250"
+              class="card-img-top"
+              alt="12-Step"
+            />
+            <div class="card-body">
+              <h5 class="card-title">12-Step Programme</h5>
+              <p class="card-text">
+                A classic framework for long-term sobriety, including peer support 
+                and spiritual growth.
+              </p>
+              <ul class="list-unstyled mt-3">
+                <li><i class="bi bi-check-circle text-success me-2"></i>Fellowship Meetings</li>
+                <li><i class="bi bi-check-circle text-success me-2"></i>Community Network</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Card 5: Aftercare & Relapse Prevention -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://via.placeholder.com/400x250"
+              class="card-img-top"
+              alt="Relapse Prevention"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Aftercare &amp; Relapse Prevention</h5>
+              <p class="card-text">
+                Ongoing support post-treatment, including sober coaching, 
+                alumni groups, and relapse-prevention planning.
+              </p>
+              <ul class="list-unstyled mt-3">
+                <li><i class="bi bi-check-circle text-success me-2"></i>Sober Coaching</li>
+                <li><i class="bi bi-check-circle text-success me-2"></i>Alumni Network</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Card 6: Family & Community -->
+        <div class="col">
+          <div class="card h-100">
+            <img
+              src="https://via.placeholder.com/400x250"
+              class="card-img-top"
+              alt="Family Support"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Family &amp; Community Engagement</h5>
+              <p class="card-text">
+                Workshops and group sessions to heal relationships, build understanding, 
+                and nurture lasting support networks.
+              </p>
+              <ul class="list-unstyled mt-3">
+                <li><i class="bi bi-check-circle text-success me-2"></i>Family Therapy</li>
+                <li><i class="bi bi-check-circle text-success me-2"></i>Local Resource Guides</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-dark text-light py-4">
-    <div class="container d-flex justify-content-between align-items-center">
-      <p class="mb-0">© 2025 Rivergate Recovery</p>
-      <ul class="list-inline mb-0">
-        <li class="list-inline-item">
-          <a href="index.html" class="text-light">Home</a>
-        </li>
-        <li class="list-inline-item">
-          <a href="about.html" class="text-light">About</a>
-        </li>
-      </ul>
+  <!-- CTA -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-3">Ready to Explore Your Options?</h2>
+      <p class="mb-4 mx-auto" style="max-width: 600px;">
+        If you or a loved one need help, contact us to discuss which programme 
+        best fits your circumstances.
+      </p>
+      <a href="contact.html" class="btn btn-outline-sage btn-lg">Contact Us</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p class="mb-0">&copy; 2025 Rivergate Recovery</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <ul class="list-inline mb-0">
+            <li class="list-inline-item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="about.html">About</a>
+            </li>
+            <li class="list-inline-item">
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </footer>
-  <!-- End Footer -->
 
-  <!-- Bootstrap JS Bundle -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"
   ></script>
 </body>
 </html>

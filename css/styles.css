@@ -1,112 +1,131 @@
-/* 
-  Rivergate Recovery Global Styles
+/* GLOBAL STYLES
+   Font Families:
+   - Title: "Inter"
+   - Subtitle: "DM Sans"
+   - Body: "IBM Plex Sans"
 
-  Colour Palette:
-    #ffffff (White)
-    #f4f1de (Light Cream)
-    #a5a58d (Sage Grey)
-    #a3b18a (Greenish Sage)
-    #6a7f60 (Dark Sage)
-    #333333 (Dark Grey)
-
-  Font Families:
-    - Title (h1, h2...): Inter
-    - Subtitle (special headings): DM Sans
-    - Body (p, normal text): IBM Plex Sans
+   Colour Palette:
+   - White: #ffffff
+   - Light Cream: #f4f1de
+   - Sage: #6a7f60   (Chosen as main brand sage)
+   - Greenish Sage: #a3b18a
+   - Dark Grey: #333333
 */
 
-/* Reset & Basic Typography */
+/* Reset & Basic Typo */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    scroll-behavior: smooth;
-  }
-  
-  /* Account for the fixed navbar height */
-  body {
-    font-family: 'IBM Plex Sans', sans-serif;
-    color: #333333;
-    background-color: #ffffff;
-    padding-top: 70px; /* ensures hero isn't hidden behind the fixed navbar */
-    line-height: 1.6;
-  }
-  
-  /* Headings */
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'Inter', sans-serif;
-    color: #333333;
-  }
-  
-  /* Subtitles or special text (optional usage) */
-  .subtitle {
-    font-family: 'DM Sans', sans-serif;
-    color: #6a7f60;
-  }
-  
-  /* Links */
-  a {
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Buttons */
-  .btn-primary {
-    background-color: #6a7f60; /* Dark Sage */
-    border-color: #6a7f60;
-  }
-  .btn-primary:hover,
-  .btn-primary:focus {
-    background-color: #a3b18a; /* Greenish Sage */
-    border-color: #a3b18a;
-  }
-  
-  .btn-outline-dark {
-    color: #333333;
-    border-color: #333333;
-  }
-  .btn-outline-dark:hover {
-    background-color: #333333;
-    color: #ffffff;
-  }
-  
-  /* Navbar */
-  .navbar-brand {
-    font-family: 'Inter', sans-serif;
-    font-size: 1.4rem;
-    color: #f4f1de !important;
-  }
-  .nav-link {
-    color: #f4f1de !important;
-    font-family: 'IBM Plex Sans', sans-serif;
-  }
-  .nav-link:hover {
-    color: #a3b18a !important; /* Greenish Sage */
-  }
-  .dropdown-menu {
-    background-color: #f4f1de;
-  }
-  .dropdown-item {
-    color: #333333;
-  }
-  .dropdown-item:hover {
-    background-color: #a3b18a;
-    color: #fff;
-  }
-  
-  /* Footer */
-  .footer {
-    font-size: 0.9rem;
-  }
-  .footer a {
-    color: #f4f1de;
-  }
-  .footer a:hover {
-    color: #a3b18a;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+  padding-top: 70px; /* account for fixed navbar height */
+  line-height: 1.6;
+}
+
+/* Headings: Centre-Aligned & Font */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #333333;
+}
+
+/* Subtitles or special headings (optional usage) */
+.subtitle {
+  font-family: 'DM Sans', sans-serif;
+  color: #6a7f60; /* Sage */
+  text-align: center;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Outline Button (sage theme) */
+.btn-outline-sage {
+  color: #6a7f60;
+  border: 1px solid #6a7f60;
+  background-color: transparent;
+  transition: background-color 0.2s, color 0.2s;
+}
+.btn-outline-sage:hover, .btn-outline-sage:focus {
+  background-color: #6a7f60;
+  color: #f4f1de;
+  border-color: #6a7f60;
+}
+
+/* Primary Filled Button (only if needed) */
+.btn-primary {
+  background-color: #6a7f60;
+  border-color: #6a7f60;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #a3b18a;
+  border-color: #a3b18a;
+}
+
+/* Navbar (Sage) */
+.navbar {
+  background-color: #6a7f60; /* Single sage colour for all pages */
+}
+.navbar-brand {
+  font-family: 'Inter', sans-serif;
+  color: #f4f1de !important;
+  font-size: 1.4rem;
+}
+.nav-link {
+  color: #f4f1de !important;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+.nav-link:hover {
+  color: #a3b18a !important; /* Greenish Sage */
+}
+.dropdown-menu {
+  background-color: #f4f1de;
+}
+.dropdown-item {
+  color: #333333;
+}
+.dropdown-item:hover {
+  background-color: #a3b18a;
+  color: #fff;
+}
+
+/* Cards (Thin Sage Border) */
+.card {
+  border: 1px solid #6a7f60; /* Thin sage border */
+  border-radius: 0.4rem;
+  background-color: #ffffff;
+}
+.card-body,
+.card-footer {
+  background-color: #ffffff;
+}
+
+/* Footer */
+.footer {
+  font-size: 0.9rem;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-color: #333333;
+  color: #f4f1de;
+}
+.footer a {
+  color: #f4f1de;
+}
+.footer a:hover {
+  color: #a3b18a;
+}
