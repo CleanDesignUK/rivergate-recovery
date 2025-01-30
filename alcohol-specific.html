@@ -13,6 +13,19 @@
     rel="stylesheet"
     crossorigin="anonymous"
   />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <!-- Bootstrap Icons -->
   <link
     rel="stylesheet"
@@ -32,8 +45,8 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+   <!-- NAVBAR (fixed-top) -->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">
         <i class="bi bi-heart-pulse-fill me-2"></i>Rivergate Recovery
@@ -52,22 +65,27 @@
 
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
+          <!-- About Link -->
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="about.html" alt="About Rivergate Recovery">About</a>
+          </li>
           <!-- Services Dropdown -->
           <li class="nav-item dropdown mx-2">
             <a
-              class="nav-link dropdown-toggle active"
+              class="nav-link dropdown-toggle"
               href="#"
               id="servicesDropdown"
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              alt="Services Dropdown"
             >
               Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
               <li><a class="dropdown-item" href="services.html">All Services</a></li>
               <li><a class="dropdown-item" href="programme-12-step.html">12-Step Programme</a></li>
-              <li><a class="dropdown-item active" href="alcohol-specific.html">Alcohol Addiction</a></li>
+              <li><a class="dropdown-item" href="alcohol-specific.html">Alcohol Addiction</a></li>
               <li><a class="dropdown-item" href="drug-specific.html">Drug Addiction</a></li>
               <li><a class="dropdown-item" href="gambling-specific.html">Gambling Addiction</a></li>
             </ul>
@@ -81,17 +99,18 @@
               role="button"
               data-bs-toggle="dropdown"
               aria-expanded="false"
+              alt="Clients Dropdown"
             >
               Clients
             </a>
             <ul class="dropdown-menu" aria-labelledby="clientsDropdown">
-              <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
-              <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+              <li><a class="dropdown-item" href="testimonials.html" alt="Testimonials">Testimonials</a></li>
+              <li><a class="dropdown-item" href="case-studies.html" alt="Case Studies">Case Studies</a></li>
             </ul>
           </li>
           <!-- Contact Link -->
           <li class="nav-item mx-2">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.html" alt="Contact Rivergate Recovery">Contact</a>
           </li>
         </ul>
       </div>

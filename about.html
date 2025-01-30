@@ -2,16 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Learn about Rivergate Recovery's approach to addiction recovery. Our mission, team, and values serving North Wales." />
-  <meta name="keywords" content="about, addiction recovery, Wrexham, counsellors, caring staff, therapy, North Wales" />
+  <meta name="description" content="Learn about Rivergate Recovery’s single-person online approach to addiction recovery, serving individuals across North Wales." />
+  <meta name="keywords" content="about, single-person, online therapy, addiction recovery, Wrexham, North Wales" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rivergate Recovery | About Us</title>
+  <title>Rivergate Recovery | About Me</title>
 
-  <!-- Bootstrap, Fonts, Global Styles (similar to index) -->
+  <!-- Bootstrap, Fonts, Global Styles -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
+    crossorigin="anonymous"
   />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
@@ -19,8 +33,8 @@
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
-  <!-- Navbar (same as index, with sage background) -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+   <!-- NAVBAR (fixed-top) -->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">
         <i class="bi bi-heart-pulse-fill me-2"></i>Rivergate Recovery
@@ -36,13 +50,24 @@
       >
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
+          <!-- About Link -->
           <li class="nav-item mx-2">
-            <a class="nav-link active" href="about.html">About</a>
+            <a class="nav-link" href="about.html" alt="About Rivergate Recovery">About</a>
           </li>
-          <li class="nav-item mx-2 dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+          <!-- Services Dropdown -->
+          <li class="nav-item dropdown mx-2">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="servicesDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              alt="Services Dropdown"
+            >
               Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
@@ -50,136 +75,163 @@
               <li><a class="dropdown-item" href="programme-12-step.html">12-Step Programme</a></li>
               <li><a class="dropdown-item" href="alcohol-specific.html">Alcohol Addiction</a></li>
               <li><a class="dropdown-item" href="drug-specific.html">Drug Addiction</a></li>
+              <li><a class="dropdown-item" href="gambling-specific.html">Gambling Addiction</a></li>
             </ul>
           </li>
-          <li class="nav-item mx-2 dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="clientsDropdown" role="button" data-bs-toggle="dropdown">
+          <!-- Clients Dropdown -->
+          <li class="nav-item dropdown mx-2">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="clientsDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              alt="Clients Dropdown"
+            >
               Clients
             </a>
             <ul class="dropdown-menu" aria-labelledby="clientsDropdown">
-              <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
-              <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+              <li><a class="dropdown-item" href="testimonials.html" alt="Testimonials">Testimonials</a></li>
+              <li><a class="dropdown-item" href="case-studies.html" alt="Case Studies">Case Studies</a></li>
             </ul>
           </li>
+          <!-- Contact Link -->
           <li class="nav-item mx-2">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.html" alt="Contact Rivergate Recovery">Contact</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+  <!-- END NAVBAR -->
 
-  <!-- Hero or Banner for About Page -->
+  <!-- HERO SECTION -->
   <section class="py-5" style="margin-top: 70px;">
     <div class="container text-center">
       <h1 class="mb-3">About Rivergate Recovery</h1>
-      <p class="mx-auto" style="max-width: 800px;">
-        Discover our origins, our team, and our commitment to transforming lives 
-        through expert addiction treatment and unwavering support.
+      <p class="mx-auto" style="max-width: 700px;">
+        Discover my single-person, online approach to addiction recovery and 
+        how I serve individuals throughout North Wales.
       </p>
     </div>
   </section>
+  <!-- END HERO SECTION -->
 
-  <!-- Mission & Values Section -->
+  <!-- MY MISSION SECTION -->
   <section class="pb-5">
     <div class="container">
       <div class="row g-4 align-items-center">
+        <!-- Image Column -->
         <div class="col-md-6 text-center">
           <img
             src="https://via.placeholder.com/600x400"
-            alt="Our caring staff"
+            alt="Therapist portrait"
             class="img-fluid rounded shadow-sm"
           />
         </div>
+        <!-- Text Column -->
         <div class="col-md-6">
-          <h2 class="mb-3">Our Mission</h2>
+          <h2 class="mb-3">My Mission &amp; Values</h2>
           <p>
-            We believe every individual deserves a chance to break free from addiction. 
-            At Rivergate Recovery, we combine evidence-based therapies, holistic care, 
-            and a compassionate mindset to guide clients toward lasting change. Our 
-            North Wales location ensures localised support and community connections.
+            I believe everyone deserves a supportive, personalised environment 
+            to overcome addiction. Through one-to-one online sessions, I combine 
+            evidence-based therapies, compassion, and a deep respect for your 
+            unique circumstances. Serving Wrexham, Colwyn Bay, Rhyl, Bangor, and 
+            beyond, my mission is to guide each client toward lasting change 
+            without the need for an inpatient facility or rotating staff.
           </p>
           <ul class="list-unstyled mt-3">
-            <li><i class="bi bi-check-circle me-2 text-success"></i>Respect &amp; Dignity</li>
-            <li><i class="bi bi-check-circle me-2 text-success"></i>Personalised Treatment Plans</li>
-            <li><i class="bi bi-check-circle me-2 text-success"></i>Evidence-Based Methods</li>
+            <li><i class="bi bi-check-circle me-2 text-success"></i>Respect &amp; Individuality</li>
+            <li><i class="bi bi-check-circle me-2 text-success"></i>Evidence-Based &amp; Holistic Methods</li>
+            <li><i class="bi bi-check-circle me-2 text-success"></i>Accessible Online Support</li>
           </ul>
         </div>
       </div>
     </div>
   </section>
+  <!-- END MY MISSION SECTION -->
 
-  <!-- Expert Team Section -->
+  <!-- MY APPROACH SECTION -->
   <section class="py-5 bg-light">
     <div class="container">
-      <h2 class="mb-4">Meet Our Expert Team</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- Example Team Member -->
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://via.placeholder.com/400x400"
-              class="card-img-top"
-              alt="Team Member"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Dr. Jane Smith</h5>
-              <p class="card-text">
-                Lead Addiction Specialist with 10+ years of experience in evidence-based 
-                recovery programmes.
-              </p>
-            </div>
-          </div>
+      <h2 class="mb-4 text-center">My Background &amp; Approach</h2>
+      <div class="row align-items-center g-4">
+        <div class="col-md-6 order-md-2">
+          <img
+            src="https://via.placeholder.com/600x400"
+            alt="Online therapy approach"
+            class="img-fluid rounded shadow-sm"
+          />
         </div>
-        <!-- Add more team members as needed -->
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://via.placeholder.com/400x400"
-              class="card-img-top"
-              alt="Team Member"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Mark Evans, MSc</h5>
-              <p class="card-text">
-                Clinical Psychologist specialising in CBT, DBT, and family therapy for 
-                substance misuse.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- Additional example -->
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://via.placeholder.com/400x400"
-              class="card-img-top"
-              alt="Team Member"
-            />
-            <div class="card-body text-center">
-              <h5 class="card-title">Sarah Williams</h5>
-              <p class="card-text">
-                Recovery Coach &amp; Counsellor, focusing on relapse prevention and 
-                community aftercare.
-              </p>
-            </div>
-          </div>
+        <div class="col-md-6 order-md-1">
+          <p>
+            With a background in clinical psychology and specialised training in 
+            addiction recovery, I’ve worked with clients facing alcohol, drug, 
+            and behavioural dependencies. Over the years, I noticed many people 
+            prefer the confidentiality and convenience of online therapy. 
+            That’s why I focus on a single-person practice—ensuring continuity, 
+            trust, and a direct line of communication between you and me.
+          </p>
+          <p class="mb-0">
+            From exploring emotional triggers to designing relapse prevention strategies, 
+            I tailor every session to align with your goals. Whether you’re a 
+            <em>high functioning alcoholic</em> seeking discreet help or someone 
+            coping with <em>substance misuse</em> for the first time, 
+            my online format provides an approachable way to start or continue your recovery.
+          </p>
         </div>
       </div>
     </div>
   </section>
+  <!-- END MY APPROACH SECTION -->
 
-  <!-- CTA -->
+  <!-- CONTACT INFO SECTION -->
   <section class="py-5">
     <div class="container text-center">
-      <h2 class="mb-3">Join Our Community of Recovery</h2>
-      <p class="mb-4" style="max-width: 800px; margin: 0 auto;">
-        We strive to make each client feel valued, supported, and empowered. 
-        Ready to take the next step? Contact our team today.
+      <h2 class="mb-3">Contact Me Directly</h2>
+      <p class="mb-4 mx-auto" style="max-width: 700px;">
+        If you’re ready to begin your journey or simply have questions, please 
+        reach out. I aim to respond to all enquiries within 24 hours.
       </p>
-      <a href="contact.html" class="btn btn-outline-sage btn-lg">Get in Touch</a>
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-start">
+          <div class="mb-3">
+            <strong>Phone:</strong> 
+            <a href="tel:+44-1234-567-890" class="text-dark">+44 1234 567 890</a>
+          </div>
+          <div class="mb-3">
+            <strong>Email:</strong> 
+            <a href="mailto:info@rivergaterecovery.co.uk" class="text-dark">info@rivergaterecovery.co.uk</a>
+          </div>
+          <div>
+            <strong>Address (Mail Only):</strong><br />
+            123 High Street<br />
+            Wrexham, LL11 XYZ<br />
+            United Kingdom
+          </div>
+        </div>
+      </div>
+      <div class="mt-4">
+        <a href="contact.html" class="btn btn-outline-sage btn-lg">Go to Contact Page</a>
+      </div>
     </div>
   </section>
+  <!-- END CONTACT INFO SECTION -->
+
+  <!-- CTA SECTION -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-3">Take the Next Step</h2>
+      <p class="mb-4 mx-auto" style="max-width: 700px;">
+        I’m here to help you move forward, one session at a time. Whether you 
+        need immediate assistance or want to learn more about my online 
+        programmes, don’t hesitate to get in touch.
+      </p>
+      <a href="services.html" class="btn btn-outline-sage btn-lg">Explore My Services</a>
+    </div>
+  </section>
+  <!-- END CTA SECTION -->
 
   <!-- FOOTER -->
   <footer class="footer pt-5 pb-3">
@@ -209,6 +261,7 @@
   <!-- Bootstrap JS -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
   ></script>
 </body>
 </html>

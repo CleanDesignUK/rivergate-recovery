@@ -2,25 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Learn about our comprehensive services: detox, 12-step, inpatient/outpatient care, and more." />
-  <meta name="keywords" content="services, detox, inpatient, outpatient, therapy, 12-step, aftercare, Wrexham, North Wales" />
+  <meta name="description" content="Explore my personalised, online addiction recovery services, utilising 12-step, CBT, ACT, and more." />
+  <meta name="keywords" content="services, addiction, recovery, therapy, 12-step, CBT, ACT, relapse prevention, single-person approach, online sessions, North Wales" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rivergate Recovery | Services</title>
 
-  <!-- Bootstrap, Fonts, Global Styles -->
+  <!-- Bootstrap CSS -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
+    crossorigin="anonymous"
   />
+  <!-- Bootstrap Icons -->
   <link
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
   />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <!-- Global Styles (styles.css) -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- NAVBAR (fixed-top) -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">
@@ -31,36 +48,61 @@
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
+          <!-- About Link -->
           <li class="nav-item mx-2">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="about.html" alt="About Rivergate Recovery">About</a>
           </li>
-          <li class="nav-item mx-2 dropdown">
-            <a class="nav-link dropdown-toggle active" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown">
+          <!-- Services Dropdown -->
+          <li class="nav-item dropdown mx-2">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="servicesDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              alt="Services Dropdown"
+            >
               Services
             </a>
             <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-              <li><a class="dropdown-item active" href="services.html">All Services</a></li>
+              <li><a class="dropdown-item" href="services.html">All Services</a></li>
               <li><a class="dropdown-item" href="programme-12-step.html">12-Step Programme</a></li>
               <li><a class="dropdown-item" href="alcohol-specific.html">Alcohol Addiction</a></li>
               <li><a class="dropdown-item" href="drug-specific.html">Drug Addiction</a></li>
+              <li><a class="dropdown-item" href="gambling-specific.html">Gambling Addiction</a></li>
             </ul>
           </li>
-          <li class="nav-item mx-2 dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="clientsDropdown" role="button" data-bs-toggle="dropdown">
+          <!-- Clients Dropdown -->
+          <li class="nav-item dropdown mx-2">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="clientsDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              alt="Clients Dropdown"
+            >
               Clients
             </a>
             <ul class="dropdown-menu" aria-labelledby="clientsDropdown">
-              <li><a class="dropdown-item" href="testimonials.html">Testimonials</a></li>
-              <li><a class="dropdown-item" href="case-studies.html">Case Studies</a></li>
+              <li><a class="dropdown-item" href="testimonials.html" alt="Testimonials">Testimonials</a></li>
+              <li><a class="dropdown-item" href="case-studies.html" alt="Case Studies">Case Studies</a></li>
             </ul>
           </li>
+          <!-- Contact Link -->
           <li class="nav-item mx-2">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="contact.html" alt="Contact Rivergate Recovery">Contact</a>
           </li>
         </ul>
       </div>
@@ -68,169 +110,195 @@
   </nav>
   <!-- END NAVBAR -->
 
-  <!-- HERO -->
+  <!-- HERO (Optional) -->
   <section class="py-5" style="margin-top: 70px;">
     <div class="container text-center">
-      <h1 class="mb-4">Our Comprehensive Services</h1>
+      <h1 class="mb-4">My Comprehensive Services</h1>
       <p class="mx-auto" style="max-width: 700px;">
-        We offer a wide range of programmes tailored to support individuals on their journey 
-        to sobriety and wellness. Explore our detox options, 12-step guidance, inpatient/outpatient 
-        care, and aftercare solutions.
+        I offer a flexible, single-person, online approach to addiction recovery—no inpatient 
+        facility or rotating staff. Below you’ll find details about my services, including 
+        therapy models, pricing, and how I incorporate unused keywords for a holistic 
+        recovery experience.
       </p>
     </div>
   </section>
+  <!-- END HERO -->
 
-  <!-- SERVICE LIST -->
-  <section class="pb-5">
+  <!-- SECTION 1: KEYWORD FOCUS -->
+  <section id="keyword-focus" class="py-5 bg-light">
     <div class="container">
+      <h2 class="mb-4 text-center">Keywords &amp; Additional Services</h2>
+      <p>
+        Over time, I’ve noticed certain terms—like <em>caffeine addiction</em>, 
+        <em>caffeine dependence</em>, or <em>painkiller addiction</em>—can play a crucial role 
+        in someone’s recovery journey. Even individuals identified as a <strong>high functioning 
+        alcoholic</strong>, or those seeking <em>help me stop drinking alcohol</em>, might also 
+        grapple with multiple <strong>relapse</strong> triggers, or find themselves living with 
+        a loved one’s addictive behaviour. My services extend to these often overlooked challenges, 
+        addressing unique problems like <strong>caffeine misuse</strong>, co-occurring <strong>anxiety 
+        or depression</strong>, and overlapping dependency issues. 
+      </p>
+      <p>
+        As a qualified online therapist, I can help you navigate less-discussed addictions 
+        and concerns, including <em>living with an alcoholic</em> partner, exploring new 
+        coping mechanisms, or engaging with <strong>drug helpline</strong> referrals in your 
+        local area. This broad lens ensures no one falls through the cracks due to 
+        under-explored or “less common” issues.
+      </p>
+    </div>
+  </section>
+  <!-- END SECTION 1 -->
+
+  <!-- SECTION 2: SERVICES INTRO (3 Cards) -->
+  <section id="services-intro" class="py-5">
+    <div class="container">
+      <h2 class="mb-5 text-center">My Core Services</h2>
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        <!-- Card 1: Detox -->
+        <!-- Card 1: 12-Step -->
         <div class="col">
           <div class="card h-100">
-            <img
-              src="https://via.placeholder.com/400x250"
-              class="card-img-top"
-              alt="Detoxification"
+            <img 
+              src="https://via.placeholder.com/400x250" 
+              class="card-img-top" 
+              alt="12-step approach"
             />
             <div class="card-body">
-              <h5 class="card-title">Detoxification</h5>
+              <h5 class="card-title">12-Step Sessions</h5>
               <p class="card-text">
-                Safe and medically supervised detox to manage withdrawal symptoms for alcohol, opioids, 
-                and other substances.
+                A structured path encouraging spiritual growth, personal inventory, 
+                and peer support. Ideal for those seeking a time-tested framework.
               </p>
-              <ul class="list-unstyled mt-3">
-                <li><i class="bi bi-check-circle text-success me-2"></i>24/7 Clinical Care</li>
-                <li><i class="bi bi-check-circle text-success me-2"></i>Medication-Assisted</li>
-              </ul>
+              <a href="programme-12-step.html" class="btn btn-outline-sage mt-3">
+                Learn More
+              </a>
             </div>
           </div>
         </div>
-        <!-- Card 2: Inpatient & Outpatient -->
+        <!-- Card 2: CBT -->
         <div class="col">
           <div class="card h-100">
-            <img
-              src="https://via.placeholder.com/400x250"
-              class="card-img-top"
-              alt="Inpatient & Outpatient"
+            <img 
+              src="https://via.placeholder.com/400x250" 
+              class="card-img-top" 
+              alt="CBT approach"
             />
             <div class="card-body">
-              <h5 class="card-title">Inpatient &amp; Outpatient Care</h5>
+              <h5 class="card-title">CBT (Cognitive Behavioural Therapy)</h5>
               <p class="card-text">
-                Flexible treatment options that meet you where you are. Benefit from structured 
-                inpatient programmes or maintain daily responsibilities with outpatient support.
+                A short-term, goal-oriented modality focusing on changing unhelpful 
+                thought patterns to alter behavioural responses.
               </p>
-              <ul class="list-unstyled mt-3">
-                <li><i class="bi bi-check-circle text-success me-2"></i>Residential Rehab</li>
-                <li><i class="bi bi-check-circle text-success me-2"></i>Day Programmes</li>
-              </ul>
+              <a href="services.html#therapy-approaches" class="btn btn-outline-sage mt-3">
+                Explore Therapy
+              </a>
             </div>
           </div>
         </div>
-        <!-- Card 3: Therapy & Counselling -->
+        <!-- Card 3: ACT -->
         <div class="col">
           <div class="card h-100">
-            <img
-              src="https://via.placeholder.com/400x250"
-              class="card-img-top"
-              alt="Therapy Sessions"
+            <img 
+              src="https://via.placeholder.com/400x250" 
+              class="card-img-top" 
+              alt="ACT approach"
             />
             <div class="card-body">
-              <h5 class="card-title">Therapy &amp; Counselling</h5>
+              <h5 class="card-title">ACT (Acceptance &amp; Commitment Therapy)</h5>
               <p class="card-text">
-                Evidence-based approaches including CBT, DBT, group therapy, and family sessions 
-                to address underlying triggers.
+                This mindfulness-based approach emphasises accepting emotions, 
+                defining core values, and committing to purposeful change.
               </p>
-              <ul class="list-unstyled mt-3">
-                <li><i class="bi bi-check-circle text-success me-2"></i>One-on-One Sessions</li>
-                <li><i class="bi bi-check-circle text-success me-2"></i>Family Workshops</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Additional row if needed -->
-      <div class="row row-cols-1 row-cols-md-3 g-4 mt-4">
-        <!-- Card 4: 12-Step -->
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://via.placeholder.com/400x250"
-              class="card-img-top"
-              alt="12-Step"
-            />
-            <div class="card-body">
-              <h5 class="card-title">12-Step Programme</h5>
-              <p class="card-text">
-                A classic framework for long-term sobriety, including peer support 
-                and spiritual growth.
-              </p>
-              <ul class="list-unstyled mt-3">
-                <li><i class="bi bi-check-circle text-success me-2"></i>Fellowship Meetings</li>
-                <li><i class="bi bi-check-circle text-success me-2"></i>Community Network</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Card 5: Aftercare & Relapse Prevention -->
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://via.placeholder.com/400x250"
-              class="card-img-top"
-              alt="Relapse Prevention"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Aftercare &amp; Relapse Prevention</h5>
-              <p class="card-text">
-                Ongoing support post-treatment, including sober coaching, 
-                alumni groups, and relapse-prevention planning.
-              </p>
-              <ul class="list-unstyled mt-3">
-                <li><i class="bi bi-check-circle text-success me-2"></i>Sober Coaching</li>
-                <li><i class="bi bi-check-circle text-success me-2"></i>Alumni Network</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- Card 6: Family & Community -->
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="https://via.placeholder.com/400x250"
-              class="card-img-top"
-              alt="Family Support"
-            />
-            <div class="card-body">
-              <h5 class="card-title">Family &amp; Community Engagement</h5>
-              <p class="card-text">
-                Workshops and group sessions to heal relationships, build understanding, 
-                and nurture lasting support networks.
-              </p>
-              <ul class="list-unstyled mt-3">
-                <li><i class="bi bi-check-circle text-success me-2"></i>Family Therapy</li>
-                <li><i class="bi bi-check-circle text-success me-2"></i>Local Resource Guides</li>
-              </ul>
+              <a href="services.html#therapy-approaches" class="btn btn-outline-sage mt-3">
+                Explore Therapy
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- END SECTION 2 -->
 
-  <!-- CTA -->
-  <section class="py-5 text-center">
+  <!-- SECTION 3: THERAPY PRACTICES -->
+  <section id="therapy-approaches" class="py-5 bg-light">
     <div class="container">
-      <h2 class="mb-3">Ready to Explore Your Options?</h2>
-      <p class="mb-4 mx-auto" style="max-width: 600px;">
-        If you or a loved one need help, contact us to discuss which programme 
-        best fits your circumstances.
+      <h2 class="mb-4 text-center">Therapy Practices &amp; Techniques</h2>
+      <p>
+        Beyond 12-Step, CBT, and ACT, I integrate other proven methods to tailor each 
+        session to your unique needs. Whether dealing with <em>substance misuse</em>, 
+        emotional triggers, or complex family dynamics, I draw from:
       </p>
-      <a href="contact.html" class="btn btn-outline-sage btn-lg">Contact Us</a>
+      <div class="row mt-4">
+        <div class="col-md-6 mb-4">
+          <ul class="list-unstyled">
+            <li>
+              <i class="bi bi-check-circle text-success me-2"></i>
+              Motivational Interviewing (MI) for building internal motivation
+            </li>
+            <li>
+              <i class="bi bi-check-circle text-success me-2"></i>
+              Mindfulness &amp; Relaxation Techniques to manage cravings
+            </li>
+            <li>
+              <i class="bi bi-check-circle text-success me-2"></i>
+              Relapse Prevention Planning addressing specific risk factors
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6 mb-4">
+          <ul class="list-unstyled">
+            <li>
+              <i class="bi bi-check-circle text-success me-2"></i>
+              Family Systems Approach for improved communication
+            </li>
+            <li>
+              <i class="bi bi-check-circle text-success me-2"></i>
+              Brief Solution-Focused Techniques for immediate problem-solving
+            </li>
+            <li>
+              <i class="bi bi-check-circle text-success me-2"></i>
+              Trauma-Informed Care fostering a safe, supportive environment
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        My single-person, online model ensures consistent care and a **confidential** 
+        setting. Each technique is adapted to fit your personal circumstances, 
+        building a balanced, sustainable approach to long-term recovery.
+      </p>
     </div>
   </section>
+  <!-- END SECTION 3 -->
+
+  <!-- SECTION 4: PRICING -->
+  <section id="pricing" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Pricing &amp; Session Details</h2>
+      <p class="mx-auto" style="max-width: 700px;">
+        I believe effective help should be accessible and transparent. My single-session 
+        rate is <strong>£45</strong>, which covers:
+      </p>
+      <ul class="list-unstyled mb-4">
+        <li><i class="bi bi-check-circle text-success me-2"></i>Weekly 1:1 Therapy Session (online)</li>
+        <li><i class="bi bi-check-circle text-success me-2"></i>Personalised Recovery Plan</li>
+        <li><i class="bi bi-check-circle text-success me-2"></i>Relapse Support &amp; Ongoing Check-ins</li>
+        <li><i class="bi bi-check-circle text-success me-2"></i>Solution-Focused Programme Tailored to Your Needs</li>
+      </ul>
+      <p class="mx-auto" style="max-width: 700px;">
+        Concessions may be available depending on your financial situation and my current 
+        scheduling capacity. If you have any questions or wish to discuss a flexible 
+        payment arrangement, please <a href="contact.html">get in touch</a>.
+      </p>
+      <a href="contact.html" class="btn btn-outline-sage btn-lg mt-3">
+        Book a Session
+      </a>
+    </div>
+  </section>
+  <!-- END SECTION 4 -->
 
   <!-- FOOTER -->
-  <footer class="footer pt-5 pb-3">
+  <footer class="footer pt-5 pb-3 mt-5 bg-dark text-light">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -239,22 +307,25 @@
         <div class="col-md-6 text-md-end">
           <ul class="list-inline mb-0">
             <li class="list-inline-item">
-              <a href="index.html">Home</a>
+              <a href="index.html" class="text-light">Home</a>
             </li>
             <li class="list-inline-item">
-              <a href="about.html">About</a>
+              <a href="about.html" class="text-light">About</a>
             </li>
             <li class="list-inline-item">
-              <a href="contact.html">Contact</a>
+              <a href="contact.html" class="text-light">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
   </footer>
+  <!-- END FOOTER -->
 
+  <!-- Bootstrap JS -->
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"
   ></script>
 </body>
 </html>
