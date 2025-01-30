@@ -1,0 +1,63 @@
+/* 
+  Alcohol-Specific CSS
+  Enhanced styling for a more comprehensive, marketing-oriented page.
+  Colour usage extends brand palette: #f4f1de (light cream), #6a7f60 (dark sage), #a3b18a (greenish sage), #333333 (dark grey)
+*/
+
+/* HERO SECTION */
+.alcohol-hero {
+    position: relative;
+    min-height: 60vh;
+    background: url('https://via.placeholder.com/1600x800') center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .alcohol-hero-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(51, 51, 51, 0.4);
+  }
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 650px;
+  }
+  
+  /* Section Headings */
+  h2 {
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+    font-weight: 700;
+  }
+  
+  /* Cards */
+  .card-title.text-dark {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    color: #6a7f60;
+  }
+  
+  /* CTA Buttons */
+  .btn-primary {
+    background-color: #6a7f60;
+    border-color: #6a7f60;
+  }
+  .btn-primary:hover {
+    background-color: #a3b18a;
+    border-color: #a3b18a;
+  }
+  
+  /* Background Colours */
+  .bg-cream {
+    background-color: #f4f1de;
+  }
+  
+  /* Footer */
+  .footer {
+    font-size: 0.9rem;
+  }
+  

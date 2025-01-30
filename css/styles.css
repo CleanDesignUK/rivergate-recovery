@@ -1,0 +1,112 @@
+/* 
+  Rivergate Recovery Global Styles
+
+  Colour Palette:
+    #ffffff (White)
+    #f4f1de (Light Cream)
+    #a5a58d (Sage Grey)
+    #a3b18a (Greenish Sage)
+    #6a7f60 (Dark Sage)
+    #333333 (Dark Grey)
+
+  Font Families:
+    - Title (h1, h2...): Inter
+    - Subtitle (special headings): DM Sans
+    - Body (p, normal text): IBM Plex Sans
+*/
+
+/* Reset & Basic Typography */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Account for the fixed navbar height */
+  body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: #333333;
+    background-color: #ffffff;
+    padding-top: 70px; /* ensures hero isn't hidden behind the fixed navbar */
+    line-height: 1.6;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    color: #333333;
+  }
+  
+  /* Subtitles or special text (optional usage) */
+  .subtitle {
+    font-family: 'DM Sans', sans-serif;
+    color: #6a7f60;
+  }
+  
+  /* Links */
+  a {
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: #6a7f60; /* Dark Sage */
+    border-color: #6a7f60;
+  }
+  .btn-primary:hover,
+  .btn-primary:focus {
+    background-color: #a3b18a; /* Greenish Sage */
+    border-color: #a3b18a;
+  }
+  
+  .btn-outline-dark {
+    color: #333333;
+    border-color: #333333;
+  }
+  .btn-outline-dark:hover {
+    background-color: #333333;
+    color: #ffffff;
+  }
+  
+  /* Navbar */
+  .navbar-brand {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+    color: #f4f1de !important;
+  }
+  .nav-link {
+    color: #f4f1de !important;
+    font-family: 'IBM Plex Sans', sans-serif;
+  }
+  .nav-link:hover {
+    color: #a3b18a !important; /* Greenish Sage */
+  }
+  .dropdown-menu {
+    background-color: #f4f1de;
+  }
+  .dropdown-item {
+    color: #333333;
+  }
+  .dropdown-item:hover {
+    background-color: #a3b18a;
+    color: #fff;
+  }
+  
+  /* Footer */
+  .footer {
+    font-size: 0.9rem;
+  }
+  .footer a {
+    color: #f4f1de;
+  }
+  .footer a:hover {
+    color: #a3b18a;
+  }
+  
