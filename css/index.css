@@ -6,7 +6,7 @@
 .hero-home {
   position: relative;
   min-height: 80vh;
-  background: url('https://via.placeholder.com/1600x900') center center / cover no-repeat;
+  background: url('../images/hero.jpg') center center / cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
