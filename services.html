@@ -32,8 +32,8 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+   <!-- NAVBAR (fixed-top) -->
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="index.html">
         <i class="bi bi-heart-pulse-fill me-2"></i>Rivergate Recovery
@@ -56,16 +56,26 @@
           <li class="nav-item mx-2">
             <a class="nav-link" href="about.html" alt="About Rivergate Recovery">About</a>
           </li>
-          <!-- Services Link (Active) -->
-          <li class="nav-item mx-2">
+          <!-- Services Dropdown -->
+          <li class="nav-item dropdown mx-2">
             <a
-              class="nav-link active"
-              aria-current="page"
-              href="services.html"
-              alt="Services Page"
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="servicesDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              alt="Services Dropdown"
             >
               Services
             </a>
+            <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="services.html">All Services</a></li>
+              <li><a class="dropdown-item" href="programme-12-step.html">12-Step Programme</a></li>
+              <li><a class="dropdown-item" href="alcohol-specific.html">Alcohol Addiction</a></li>
+              <li><a class="dropdown-item" href="drug-specific.html">Drug Addiction</a></li>
+              <li><a class="dropdown-item" href="gambling-specific.html">Gambling Addiction</a></li>
+            </ul>
           </li>
           <!-- Clients Dropdown -->
           <li class="nav-item dropdown mx-2">
