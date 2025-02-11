@@ -29,6 +29,43 @@
 
   <!-- Global Styles (styles.css) -->
   <link rel="stylesheet" href="css/styles.css" />
+ <!-- Added Custom Styles -->
+ <style>
+  /* Ensure images are responsive and do not exceed their container */
+  .method-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Left align the headings for the three service methods */
+  .recovery-methods-section h3 {
+    text-align: left;
+  }
+
+/* Set the hero section background image */
+#services-hero {
+  background: url('images/services-hero.jpg') center center/cover no-repeat;
+  position: relative;
+  min-height: 400px; /* Adjust the height as needed */
+}
+
+/* Ensure the overlay is behind the text */
+#services-hero .services-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1; /* Lower z-index for overlay */
+}
+
+/* Bring the hero text to the front */
+#services-hero .services-hero-content {
+  position: relative;
+  z-index: 2; /* Higher z-index for content */
+}
+</style>
 </head>
 <body>
 
@@ -107,26 +144,26 @@
 
   <!-- HERO SECTION -->
   <section 
-    id="services-hero" 
-    class="services-hero d-flex align-items-center justify-content-center"
-  >
-    <div class="services-hero-overlay"></div>
-    <div class="container text-center services-hero-content">
-      <h1 class="display-5 fw-bold text-white mb-3">
-        Services &amp; Approaches
-      </h1>
-      <p class="lead text-white mb-4">
-        A tailor-made plan for each individual, exploring tools like 12-Step, ACT, and CBT.
-      </p>
-      <a 
-        href="contact.html" 
-        class="btn btn-outline-sage-hero btn-lg" 
-        alt="Get Started Button"
-      >
-        Get Started
-      </a>
-    </div>
-  </section>
+  id="services-hero" 
+  class="services-hero d-flex align-items-center justify-content-center"
+>
+  <div class="services-hero-overlay"></div>
+  <div class="container text-center services-hero-content">
+    <h1 class="display-5 fw-bold text-white mb-3">
+      Services &amp; Approaches
+    </h1>
+    <p class="lead text-white mb-4">
+      A tailor-made plan for each individual, exploring tools like 12-Step, ACT, and CBT.
+    </p>
+    <a 
+      href="contact.html" 
+      class="btn btn-outline-sage-hero btn-lg" 
+      alt="Get Started Button"
+    >
+      Get Started
+    </a>
+  </div>
+</section>
   <!-- END HERO SECTION -->
 
   <!-- INTRO SECTION -->
@@ -201,7 +238,7 @@
         <!-- Image Column -->
         <div class="col-md-5 text-center">
           <img
-            src="images/act-therapy.jpg"
+            src="images/ACT.jpg"
             alt="Acceptance and Commitment Therapy"
             class="img-fluid method-img shadow-sm"
           />
@@ -235,7 +272,7 @@
         <!-- Image Column -->
         <div class="col-md-5 text-center">
           <img
-            src="images/cbt-therapy.jpg"
+            src="images/CBT.jpg"
             alt="Cognitive Behavioural Therapy"
             class="img-fluid method-img shadow-sm"
           />

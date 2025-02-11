@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 /* GLOBAL STYLES
    Font Families:
-   - Title: "Inter"
-   - Subtitle: "DM Sans"
-   - Body: "IBM Plex Sans"
+   - Title: "Source Sans 3"
+   - Subtitle: "Fira Sans"
+   - Body: "Noto Sans"
 
    Colour Palette:
    - White: #ffffff
@@ -24,24 +27,24 @@ html {
 
 /* Body */
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif !important;
   color: #333333;
   background-color: #ffffff;
   padding-top: 70px; /* account for fixed navbar height */
   line-height: 1.6;
 }
 
-/* Headings: Centre-Aligned & Font */
+/* Headings: Centre-Aligned & Font (Title) */
 h1, h2, h3, h4, h5, h6 {
   text-align: center;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Source Sans 3', sans-serif !important;
   font-weight: 500;
   color: #333333;
 }
 
-/* Subtitles or special headings (optional usage) */
+/* Subtitles or special headings (Subtitle) */
 .subtitle {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Fira Sans', sans-serif !important;
   color: #6a7f60; /* Sage */
   text-align: center;
 }
@@ -49,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Links */
 a {
   text-decoration: none;
-  color:#6a7f60;
+  color: #6a7f60;
   font-weight: 600;
 }
 a:hover {
@@ -63,7 +66,8 @@ a:hover {
   background-color: transparent;
   transition: background-color 0.2s, color 0.2s;
 }
-/* Outline Button (sage theme) */
+
+/* Outline Button for Hero Section */
 .btn-outline-sage-hero {
   color: white;
   border: 1px solid #6a7f60;
@@ -71,8 +75,8 @@ a:hover {
   transition: background-color 0.2s, color 0.2s;
 }
 
-
-.btn-outline-sage:hover, .btn-outline-sage:focus {
+.btn-outline-sage:hover, 
+.btn-outline-sage:focus {
   background-color: #6a7f60;
   color: #f4f1de;
   border-color: #6a7f60;
@@ -94,13 +98,13 @@ a:hover {
   background-color: #6a7f60; /* Single sage colour for all pages */
 }
 .navbar-brand {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Source Sans 3', sans-serif;
   color: #f4f1de !important;
   font-size: 1.4rem;
 }
 .nav-link {
   color: #f4f1de !important;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 .nav-link:hover {
   color: #a3b18a !important; /* Greenish Sage */
@@ -130,7 +134,7 @@ a:hover {
 /* Footer */
 .footer {
   font-size: 0.9rem;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   background-color: #333333;
   color: #f4f1de;
 }
@@ -140,7 +144,6 @@ a:hover {
 .footer a:hover {
   color: #a3b18a;
 }
-
 
 /* ALCOHOL HERO */
 .alcohol-hero {
@@ -166,8 +169,6 @@ a:hover {
   color: #fff;
 }
 
-
-
 /* DRUG HERO */
 .drug-hero {
   position: relative;
@@ -192,7 +193,10 @@ a:hover {
   color: #fff;
 }
 
-strong {font-weight: 500;}
+strong {
+  font-weight: 500;
+}
+
 /* GAMBLING HERO */
 .gambling-hero {
   position: relative;
